@@ -1,0 +1,143 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, header {
+    max-width: 390px;
+    background: white;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+header {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 93%, rgba(157,238,255,1) 100%);
+}
+
+.navigation {
+    display: flex;
+    height: 15vh;
+}
+
+
+/* LOGO */
+.logo_home img{
+    width: 80px;
+    height: auto;
+    margin: 1.5em;
+    border-radius: 20px;
+}
+
+
+.nav_container {
+    width: 100%;
+    height: 100%;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    width: 50px;
+    height: 50px;
+    margin: 12% 20%;
+    background-image: linear-gradient(to right, #2980b9, #6dd5fa, #c9f2f5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu div{
+    width: 50px;
+    height: 1px;
+    margin: 1px;
+    position: relative;
+}
+
+.menu span{
+    background: #fff;
+    width: 30px;
+    height: 6px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    transition: transform 0.5s, width 0.5s;
+}
+
+/* bar haut/haut-droite */
+.menu .line-1{
+    width: 30%;
+    transform: translate( -100%, 10px);
+    transform-origin: 0 0;
+}
+
+/* bar bas/bas-gauche */
+.menu .line-3{
+    width: 30%;
+    left: auto;
+    right: 0;
+    transform: translate( -60%, 30px);
+    transform-origin: 100% 0;
+}
+.openmenu .line-1{
+    transform: translate(-15%, 20px) rotate(-45deg);
+}
+.openmenu .line-3{
+    transform: translate(-185%, 20px) rotate(-45deg);
+}
+.openmenu .line-2{
+    transform: translate(-50%, 20px) rotate(45deg);
+}
+
+/* OVERLAY MENU */
+
+.overlay_menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 16vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#overlay_menu.active {
+    width: 100%;
+}
+
+
+.link_menu {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.link_menu a {
+    margin: 2rem 0;
+    text-decoration: none;
+    font-size: 30px;
+    color: royalblue;
+    display: block;
+    transition: 0.3s;
+}
+
+/* accueil */ 
+
+.presentation {
+    padding: 10px;
+}
+
+.presentation img {
+    margin: 2rem 1rem;
+}
+
+.text {
+    font-family:monospace;
+    font-size: 1.5rem;
+}
