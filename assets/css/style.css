@@ -10,6 +10,7 @@ body, header {
     max-width: 390px;
     background: white;
     margin: 0 auto;
+    font-family:'Source Sans Pro', sans-serif; 
 }
 
 body {
@@ -138,15 +139,20 @@ header {
 
 .presentation img {
     margin: 2rem 1rem;
+    border-radius: 20px;
+    box-shadow: 1px 7px 16px -1px rgba(15,189,214,0.91);
 }
 
 .text {
-    font-family:'Source Sans Pro', sans-serif;
     font-size: 1.1rem;
     padding: 10%;
 }
 
 /* Slider partners */
+.partenaires {
+    margin: 20px;
+}
+
 .slider_partner {
     display: flex;
     background-image: linear-gradient(112.5deg, rgb(140,190,240) 0%, rgb(140,190,240) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(93,194,255) 53%, rgb(93,194,255) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(140,190,240) 0%, rgb(140,190,240) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(93,194,255) 53%, rgb(93,194,255) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(140,190,240) 0%, rgb(140,190,240) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(93,194,255) 53%, rgb(93,194,255) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(238,249,255)); background-blend-mode:overlay,overlay,overlay,normal;    align-items: center;
