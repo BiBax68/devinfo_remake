@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,600&display=swap');
 
-*{
+:root {
+    --main-blue-color : #86cdf7;
+}
+
+*, ::before, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,11 +18,21 @@ body, header {
 }
 
 body {
-    border: 0.5px solid black;
+    border: 0.5px solid rgb(245, 234, 234);
 }
 
 header {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 93%, rgba(157,238,255,1) 100%);
+    z-index: 10;
+    transition: 10s;
+}
+
+header.scroll {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: -5px;
+    transition: 10s;
 }
 
 .navigation {
@@ -138,18 +152,18 @@ header {
 }
 
 .presentation img {
-    margin: 2rem 1rem;
+    margin: 5% 10%;
     border-radius: 20px;
     box-shadow: 1px 7px 16px -1px rgba(15,189,214,0.91);
 }
 
 .text {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     padding: 10%;
 }
 
 /* Slider partners */
-.partenaires {
+h2 {
     margin: 20px;
 }
 
@@ -200,4 +214,34 @@ header {
     border-radius: 20px;
     object-fit:scale-down;
     transition: 2s;
+}
+
+/* ------ Contact Area -------- */ 
+.contact {
+    margin: 10px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+.contact_area {
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_area button {
+    margin: 5px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 1em;
+    appearance: none;
+    background-color: var(--main-blue-color);
+    box-shadow: 0 5px 12px var(--main-blue-color);
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
 }

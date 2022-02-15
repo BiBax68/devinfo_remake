@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,600&display=swap');
+
+:root {
+    --main-blue-color : #86cdf7;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 0.5px solid rgb(245, 234, 234);
+}
+
+main {
+    height: 100vh;
+}
+
+main h1 {
+    margin: 20px;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
